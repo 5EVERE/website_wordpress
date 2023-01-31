@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/app.js"></script>
   </head>
   <body>
     <section class="promo">
@@ -33,7 +34,7 @@
           <span>БЕЗКОШТОВНОМУ</span> інтенсиві!
         </div>
 
-        <button class="promo_btn">Записатися на інтенсив!</button>
+        <button class="promo_btn btn-reg">Записатися на інтенсив!</button>
 
         <div class="more">
           <div class="more_text">Дізнатись більше про інтенсив</div>
@@ -186,7 +187,7 @@
           Натискайте на кнопку нижче, беріть участь у вебінарах та забирайте
           свій приз після закінчення навчання!
         </div>
-        <button class="box_btn">Записатися на інтенсив!</button>
+        <button class="box_btn btn-reg">Записатися на інтенсив!</button>
       </div>
     </section>
     <section class="first_webinar">
@@ -223,5 +224,20 @@
         <div class="footer_text">Подзвоніть нам +380-67-144-2222</div>
       </div>
     </footer>
+
+    <div class="modal-window hidden">
+      <button class="btn--close-modal-window">&times;</button>
+      <h2 class="modal__header">Записатися на інтенсив</h2>
+      <form class="modal__form">
+        <label>Ім'я</label>
+        <input type="text" name="user_name" />
+        <label>Прізвище</label>
+        <input type="text" name="user_lastname" />
+        <label>Email</label>
+        <input type="email" name="email" />
+        <button class="btn btn-next">Дальше &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
   </body>
 </html>
